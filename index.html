@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick and Morty</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="modal-overlay" class="modal-overlay">
+      <div class="modal" id="modal"></div>
+    </div>
+
+    <div class="wrap">
+      <header>
+        <div class="logo">Rick and Morty</div>
+        <nav>
+          <ul>
+            <li id="home">Home</li>
+            <li id="characters">Characters</li>
+            <li id="episodes">Episodes</li>
+            <li id="locations">Locations</li>
+            <li id="watchList" class="active">Watch list</li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <div id="page-home" class="page">Home</div>
+        <div id="page-characters" class="page">Characters</div>
+        <div id="page-episodes" class="page">Episodes</div>
+        <div id="page-locations" class="page">Locations</div>
+        <div id="page-watchList" class="page">
+          <div class="watch-list-page">
+      <div class="add-episode-section">
+        <select id="episode-select">
+          <option value="">Select an episode</option>
+        </select>
+        <button id="add-episode-btn">Add to Watch List</button>
+      </div>
+      <div id="watch-list-container" class="watch-list-container"></div>
+    </div>
+
+        </div>
+
+        <div class="pagination" id="pagination">
+          <button id="prevPage">-</button>
+          <div id="pageCounter">1</div>
+          <button id="nextPage">+</button>
+        </div>
+      </main>
+
+      <footer>
+        <div>FOOTER</div>
+      </footer>
+    </div>
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
